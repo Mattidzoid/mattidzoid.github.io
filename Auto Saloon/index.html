@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Righel Auto Salon</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- MENU -->
+
+    <div class="row sticky">
+        <div class="menu col-12 major-mono-display-regular"
+            style="display: flex; justify-content: center; height: 100px; position: relative;">
+            <a href="https://www.instagram.com/righelbandofficial/" target="_blank" class="col-0-p">
+                <img src="IMAGES/white_logo_transparent.png" alt="" height="80%"
+                    style="top: 8%; position: absolute; left: 1%;">
+            </a>
+            <div>
+                <a class="menu_item" onclick="HomeScroll()">home</a>
+                <a class="menu_item" onclick="AboutScroll()">about</a>
+                <a class="menu_item" onclick="OrderScroll()">order</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- SLIDESHOW -->
+
+    <div class="row" style="margin-top: 100px; margin-bottom: 50px;" id="home">
+        <div class="slideshow-container" style="height: 660px; background-color: white;">
+            <div class="gallery_slides fade_in">
+                <img src="IMAGES/GALLERY/righel-gt3.png" class="slideshow_image">
+            </div>
+
+            <div class="gallery_slides fade_in">
+                <img src="IMAGES/GALLERY/righel-golf.png" class="slideshow_image">
+            </div>
+
+            <div class="gallery_slides fade_in">
+                <img src="IMAGES/GALLERY/righel-prius.png" class="slideshow_image">
+            </div>
+        </div>
+        <br>
+    </div>
+
+    <!-- ABOUT SECTION -->
+
+    <div class="row scroll_fade title_div">
+        <h1 class="major-mono-display-regular title_header" id="about">welcome to righel auto</h1>
+    </div>
+
+    <div class="row scroll_fade" style="margin-bottom: 100px;">
+        <div class="col-1 col-0-t col-0-p"><br></div>
+        <div class="col-5 col-12-t col-12-p" style="display: flex; justify-content: center;">
+            <h2 class="major-mono-display-regular description_header" style="padding-left: 40px;">top of the line team
+            </h2>
+            <img src="IMAGES/TEAM/team.png" alt="" class="description_img">
+        </div>
+        <div class="col-5 col-12-t col-12-p">
+            <p class="space-grotesk description_text">
+                Forget the lightning fast solos and earth-crushing breakdowns, Righel, the one-time terror of the metal
+                scene, has
+                traded instruments for wrenches! After their face-melting riffs failed to crack the
+                mainstream, the bandmates found themselves with more engine grease under their nails than
+                eyeliner! But what they lacked in chart-topping fame, they made up for in mechanical
+                ingenuity.
+            </p>
+        </div>
+    </div>
+
+    <div class="row scroll_fade" style="margin-bottom: 80px;">
+        <div class="col-1 col-0-t col-0-p"><br></div>
+        <div class="col-5 col-12-t col-12-p">
+            <p class="space-grotesk description_text">
+                Car got you singing the blues? Rigel Auto's Headbanger Hotline is on call 24/7! Our certified mechanics
+                will thrash through your car troubles, diagnose with mosh-worthy precision, and get you back on the
+                road. We'll turn your breakdown into a triumphant encore, guaranteed!
+            </p>
+        </div>
+        <div class="col-5 col-12-t col-12-p" style="display: flex; justify-content:flex-end;">
+            <img src="IMAGES/TEAM/mechanic.png" alt="" class="description_img" style="float: right;">
+            <h2 class="major-mono-display-regular description_header" style="text-align: right; padding-left: 40px;">
+                24/7 open call help line</h2>
+        </div>
+    </div>
+
+    <!-- ORDER -->
+
+    <div class="row scroll_fade title_div">
+        <h1 class="major-mono-display-regular title_header" id="order">order</h1>
+    </div>
+
+    <form action="">
+        <div class="row">
+            <div class="col-4 col-0-p">
+                <h3 class="order_header major-mono-display-regular">model</h3>
+            </div>
+            <div class="col-4 col-0-p">
+                <h3 class="order_header major-mono-display-regular">engine</h3>
+            </div>
+            <div class="col-4 col-0-p">
+                <h3 class="order_header major-mono-display-regular">fuel</h3>
+            </div>
+
+            <div class="row" style="margin-bottom: 30px;">
+                <div class="col-4 col-12-p">
+                    <select name="models" id="models" class="major-mono-display-regular car_build_selector">
+                        <option value="righel-golf">rolf</option>
+                        <option value="righel-prius">rigus</option>
+                        <option value="righel-gt3">gr-3</option>
+                    </select>
+                </div>
+                <div class="col-4 col-12-p">
+                    <select name="engines" id="engines" class="major-mono-display-regular car_build_selector">
+                        <option value="0">engine level i</option>
+                        <option value="1">engine level ii</option>
+                        <option value="2">engine level iii</option>
+                    </select>
+                </div>
+                <div class="col-4 col-12-p">
+                    <select name="fuel" id="fuels" class="major-mono-display-regular car_build_selector">
+                        <option value="0">electric</option>
+                        <option value="1">coal</option>
+                        <option value="2">diesel</option>
+                        <option value="3">nuclear</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="row" style="margin-bottom: 60px;">
+                <div class="col-8 col-12-t col-12-p">
+                    <img src="IMAGES/GALLERY/righel-golf.png" id="model_image" alt=""
+                        style="width: 90%; margin-left: 5%; height: 550px; object-fit: cover; border-radius: 50px; box-shadow: 0px 10px 10px black;">
+                </div>
+                <div class="col-4 major-mono-display-regular col-12-t col-12-p" style="height: 550px; position: relative;">
+                    <div style="width: 80%; padding-left: 10%; font-weight: 300;">
+                        <h3 style="font-size: 20px; padding-bottom: 20px;">price:</h3>
+                        <h3 style="font-size: 100px; margin-bottom: 100px;" id="priceText">$40000</h3>
+
+                        <div>
+                            <h3 class="slider_text">performance: </h3>
+                            <h3 class="slider_text" id="max_speed">140kph</h3>
+                            <div class="slider" style="margin-bottom: 30px;">
+                                <div class="slider_progress" id="speed_slider_progress">
+
+                                </div>
+                            </div>
+                            <h3 class="slider_text">chance of explosion: </h3>
+                            <h3 class="slider_text" id="explosion_chance">4%</h3>
+                            <div class="slider">
+                                <div class="slider_progress" id="coe_slider_progress">
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <input type="button" onclick="ToggleOrder()" value="order now" class="major-mono-display-regular order_button">
+                    </div>
+                </div>
+            </div>
+    </form>
+
+    <!-- FOOTER -->
+
+    <div class="col-12" style="height: 500px; background-color: #190101;">
+        <div class="row">
+            <div class="col-1"><br></div>
+            <div class="col-4">
+                <h2 class="major-mono-display-regular" style="padding-left: 30px; padding-top: 30px; color: #b77e7e;">
+                    where to find us:
+                </h2>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-1"><br></div>
+            <div class="col-4" style="height: 70%; padding: 30px;">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2902.717222894853!2d21.902626076639525!3d43.32017867390538!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4755b1cd5f14a443%3A0x64e447eb6fd800f2!2sBarber%20Shop%20Lobotomy!5e0!3m2!1sen!2srs!4v1715772311812!5m2!1sen!2srs"
+                    width="90%" height="350px" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </div>
+
+            <div class="col-2" style="color: #b77e7e; padding-top: 30px;">
+                <p class="space-grotesk" style="color: #b77e7e">
+                    Adress: <i style="color: #b77e7e">Paklene Ulice 3</i> <br><br> Do not come to our house. As this is
+                    a very real adress we don't want you upsetting our peace, this goes for police especially. There is
+                    no illegal activities here. <br><br> Go home please. We promise :D
+                </p>
+            </div>
+
+            <div class="col-4" style="color: #b77e7e; padding-top: 30px; padding-left: 60px;">
+                <p class="space-grotesk" style="color: #b77e7e">
+                    Non-threatening legal Information: <br><br> While Righel Auto cannot be held liable for any
+                    "accidents" that may occur due to unforeseen malfunctions or driver error, a word to the wise: our
+                    warranty claims process is notoriously time-consuming. Delays are commonplace, and satisfaction is
+                    rarely guaranteed.
+                    <br><br>
+                    Should you find yourself in a situation where Righel Auto is deemed responsible for any issues, be
+                    prepared for an arduous journey. Legal recourse is, of course, your right, but we recommend
+                    exhausting all other options first. <br><br>
+                    Remember, time is money, and Righel Auto values both dearly.
+                </p>
+            </div>
+
+        </div>
+
+        <div class="row">
+            <p class="space-grotesk" style="font-size: small; color: #b77e7e; text-align: center;">&copy;
+                Righel Auto Services Co. 2024/2023.</p>
+        </div>
+    </div>
+
+    <!-- ORDER POPUP -->
+
+    <form action="">
+        <div class="major-mono-display-regular overlay" id="order_overlay">
+
+            <p style="font-size: 50px; padding-top: 30px; text-align: center; line-height: 70px; color: #190101;">thank you for <br>
+                ordering
+            </p>
+
+            <br>
+            <table style="margin: 20px 10% 20px 10%;">
+                <tr>
+                    <td colspan="2">
+                        <h3>personal information:</h3>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <input type="text" class="space-grotesk" placeholder="First Name">
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <input type="text" class="space-grotesk" placeholder="Last Name">
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <input type="number" class="space-grotesk" placeholder="Phone Number">
+                    </td>
+                </tr>
+
+                <tr>
+                    <td colspan="2">
+                        <h3>location:</h3>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <input type="text" class="space-grotesk" placeholder="Country">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="text" class="space-grotesk" placeholder="City" style="width: 98%;">
+                    </td>
+                    <td>
+                        <input type="text" class="space-grotesk" placeholder="Adress">
+                    </td>
+                </tr>
+            </table>
+
+            <input type="submit" value="buy" onclick="" class="major-mono-display-regular buy_button">
+
+        </div>
+    </form>
+
+    <script src="SCRIPTS/slideshow.js"></script>
+    <script src="SCRIPTS/slidetosection.js"></script>
+    <script src="SCRIPTS/order.js"></script>
+</body>
+
+</html>
