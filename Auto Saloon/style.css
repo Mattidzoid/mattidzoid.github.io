@@ -278,6 +278,9 @@ td input {
 .overlay {
     transition: 0.5s;
 
+    pointer-events: none;
+    opacity: 0;
+
     background-color: white;
     width: 30%;
     height: 855px;
@@ -287,15 +290,6 @@ td input {
     position: fixed;
     top: 40px;
     z-index: 99999;
-}
-
-#bcg {
-    width: 100%;
-    height: 100%;
-    z-index: 9998;
-
-    background-color: #190101;
-    opacity: 0.2;
 }
 
 .row {

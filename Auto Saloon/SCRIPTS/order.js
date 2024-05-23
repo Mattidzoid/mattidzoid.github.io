@@ -89,11 +89,13 @@ function ToggleOrder() {
 
     if(!order_open){
         element.style.opacity = 1;
-
+        element.style.pointerEvents= 'all';
+        
         order_open = true;
     }
     else{
         element.style.opacity = 0;
+        element.style.pointerEvents= 'none';
 
         order_open = false;
     }
